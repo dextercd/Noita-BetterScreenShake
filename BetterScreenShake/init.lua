@@ -49,7 +49,7 @@ function OnWorldPreUpdate()
         dir = dir + math.pi + (Random()-0.5) * math.pi/2
         dir = math.fmod(dir, 2 * math.pi)
         if dir < 0 then
-            dir = 2*math.pi - dir
+            dir = 2*math.pi + dir
         end
         next_dir_frames = Random(2, 5)
     end
